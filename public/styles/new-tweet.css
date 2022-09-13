@@ -1,0 +1,36 @@
+h2 {
+  display: flex;
+}
+
+label {
+  display: flex;
+  font-weight: bold;
+}
+
+button {
+  font-family: 'Bungee', sans-serif;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  border: none;
+}
+
+.counter {
+  display: flex;
+  font-family: 'Bungee',sans-serif;
+  justify-content: flex-end;
+}
+
+section {
+  width: 100%;
+  padding-left: 1.5em;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  border-bottom: 4px solid black;
+  background-color: #f4f1ec;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
