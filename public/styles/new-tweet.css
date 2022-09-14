@@ -9,13 +9,21 @@ label {
 
 .user-icon {
   display: flex;
+  /* border-bottom: 4px solid black; */
+  width: 90%;
+  height: 100px;
+  margin: 1.5em;
+  justify-content: space-between;
+
+}
+
+.content {
+  display: flex;
   border-bottom: 4px solid black;
   width: 90%;
   height: 100px;
   margin: 1.5em;
 }
-
-
 
 button {
   font-family: 'Bungee', sans-serif;
