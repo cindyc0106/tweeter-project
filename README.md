@@ -16,3 +16,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Features
+
+- Users can write a "tweet" in the text box and submit by clicking "TWEET". 
+- The "tweet" will be submitted via AJAX and the feed below is updated without a page redirection/refresh.
+- Real time character counter is featured below text box as the user types/deletes
+- Icons and "tweet" boxes with extra features when hovered
+- Form validation error messages will be displayed for empty "tweets" and/or "tweets" longer than the specified max length.
+- Responsive deisng is used, and adjusts depending on size of display
