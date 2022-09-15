@@ -70,6 +70,8 @@
     integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- Disabling Viewport Zooming -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 </head>
 
 <body>
@@ -78,12 +80,10 @@
     <span class="left">tweeter</span>
     <span class="write"><strong>Write</strong> a new tweet<br><i class="fa-solid fa-angles-down"></i></span>
   </nav>
-  <header>
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <div>
-      <h2>Your Name</h2>
+  <header class="profile">
+    <div class="profile">
+      <img class="image" src="/images/profile-hex.png">
+      <h2 class="name">Your Name</h2>
     </div>
   </header>
 
@@ -104,19 +104,6 @@
     </section>
 
     <section class="new-tweet" id="tweets-container">
-      <article class="tweet">
-        <p class="user-icon">
-          <i class="fa-sharp fa-solid fa-user-astronaut"></i> Name
-        </p>
-        <footer>
-          <div>last active</div>
-          <div class="icons">
-            <div class="icon"><i class="fa-solid fa-flag"></i></div>
-            <div><i class="icon fa-solid fa-retweet"></i></div>
-            <div class="icon"><i class="fa-solid fa-heart"></i></div>
-          </div>
-        </footer>
-      </article>
     </section>
   </main>
 </body>

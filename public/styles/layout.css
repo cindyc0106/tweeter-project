@@ -34,9 +34,36 @@ body {
 
 }
 
-/* .new-tweet {
+label {
+  display: flex;
+  font-weight: bold;
+  padding-top: 1.5em;
+}
+
+section {
+  width: 100%;
+  padding-left: 1.5em;
   background-color: #f4f1ec;
-} */
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 50%;
+    margin-right: 0;
+    padding-top: 6.5em;
+    float: right
+  }
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
