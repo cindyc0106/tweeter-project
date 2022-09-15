@@ -25,3 +25,10 @@ This repository is the starter code for the project: Students will fork and clon
 - Icons and "tweet" boxes with extra features when hovered
 - Form validation error messages will be displayed for empty "tweets" and/or "tweets" longer than the specified max length.
 - Responsive deisng is used, and adjusts depending on size of display
+
+## Screenshots
+
+!["Screenshot of main page](https://github.com/cindyc0106/tweeter-project/blob/master/docs/main.png?raw=true)
+!["Screenshot of error with too much text](https://github.com/cindyc0106/tweeter-project/blob/master/docs/too%20much%20text%20error.png?raw=true)
+!["Screenshot of error with empty text](https://github.com/cindyc0106/tweeter-project/blob/master/docs/empty%20text%20error.png?raw=true)
+!["Screenshot of layout/features](https://github.com/cindyc0106/tweeter-project/blob/master/docs/page%20display.png?raw=true)
