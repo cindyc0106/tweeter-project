@@ -24,6 +24,7 @@ button {
   background-color: #4056A1;
   color: #FFFFFF;
   border: none;
+  margin-top: 0.5em;
 }
 
 .tweets-container {
@@ -35,6 +36,7 @@ button {
   display: flex;
   font-family: 'Bungee', sans-serif;
   justify-content: flex-end;
+  padding-bottom: 0.5em;
 }
 
 textarea {

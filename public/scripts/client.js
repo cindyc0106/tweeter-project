@@ -2,7 +2,6 @@
 
 $(() => {
 
-
   $('form').on('submit', (event) => {
 
     event.preventDefault();
@@ -28,14 +27,21 @@ $(() => {
    
     const serializedData = $('form').serialize();
 
-    $.post('/tweets/', serializedData, (res) => {
-      $('#tweets-container').empty();
-    
-      loadTweets();
-      console.log(res);
-    });
-
-  });
+    $.ajax({
+      type: 'POST',
+      url: '/tweets',
+      data: serializedData
+    }).then(()=> {
+      $.ajax({
+        type: 'GET',
+        url: '/tweets',
+        success: (data) => {
+          $('#tweet-text').val("");
+          renderTweets(data);
+        }
+      });
+    })
+  })
 
   const loadTweets = () => {
 
@@ -44,24 +50,22 @@ $(() => {
       url: '/tweets',
       success: (data) => {
         renderTweets(data);
-
+        
       }
     });
   };
 
   loadTweets();
 
-});
-
-
 const renderTweets = function(tweets) {
-
+    $('#tweets-container').empty()
   // loops through tweets
   for (const tweet of tweets) {
     // calls createTweetElement for each tweet
+    const tweetContainer = $('#tweets-container')
     const $tweet = createTweetElement(tweet);
     // takes return value and appends it to the tweets container
-    $('#tweets-container').prepend($tweet);
+    tweetContainer.prepend($tweet);
   }
 };
 
@@ -86,6 +90,4 @@ const createTweetElement = (tweet) => {
   return $tweet;
 };
 
-
-
-
+});
