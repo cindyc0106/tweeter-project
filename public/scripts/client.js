@@ -30,6 +30,7 @@ $(() => {
 
     $.post('/tweets/', serializedData, (res) => {
       $('#tweets-container').empty();
+    
       loadTweets();
       console.log(res);
     });
